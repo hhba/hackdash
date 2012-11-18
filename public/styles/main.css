@@ -1,91 +1,311 @@
 
-.container { margin-top: 60px; }
+body {
+  margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; color: #333333; background-color: #f8f8f8; }
 
-.signIn { margin-top: 40px; text-align: center; padding-top: 60px; padding-bottom: 60px; }
-  .signIn img {margin-bottom: 20px; }
-
-.newProject { margin-top: 4px;  }
-
-.cancel { margin-left: 10px; margin-right: 10px; }
-
-.projects { margin-top: 20px;  }
-
-.projects .project { width: 20%; overflow: hidden; overflow-x: scroll; }
-
-.form-search { margin-top: -15px }
-  .form-search button { margin-left: 20px; }
-
-
-.users { list-style: none; margin: 0; }
-  .users li { display: inline; margin-right: 2px; width: 48px;}
-    .users li span { font-size: 0.9em; }
-
-.more { display: none; }
-
-
-.logo {
-  
+@font-face {
+font-family: 'Entypo';
+src: url('font-face/entypo-webfont.eot');
+src: url('font-face/entypo-webfont.eot?#iefix') format('embedded-opentype'),
+url('font-face/entypo-webfont.woff') format('woff'),
+url('font-face/entypo-webfont.ttf') format('truetype'),
+url('font-face/entypo-webfont.svg#EntypoRegular') format('svg');
+font-weight: normal;
+font-style: normal;
 }
 
-.header {
-  margin-top: 30px;
+header { padding: 18px 0 17px 0; margin: 18px 0; border-bottom: 1px solid #eee; }
+
+header h1 {
+  margin: 5px 0;
 }
 
-.header .form-search {
-  margin-top: 30px;
-}
-
- .header .newProject {
-  right: 0;
-  padding: 23px;
-  background-color: #c83737;
-  background-image: none;
-  width: 279px;
-}
-
-.project .title a {
-  color: #000;
-  text-decoration: none;
-}
-
-.project .description {
-  min-height: 72px;
-}
-
-.header .newProject {
-  text-indent: -999em;
-  background: transparent;
-}
-
-.header .newProject img {
-  height: 70px;
+header p.lead {
+          margin-bottom: 0;
+           font-size: 14px;
+         font-weight: bold;
+            color: #474747;
 }
 
 
-a {
-    color: #C13E38;
-    text-decoration: none;
+header p.createProject {
+                        
+                       }
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .project {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
 }
 
 .well {
-    background-color: #FFFFFF;
-    border: 1px solid #C5C5C5;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 1px 1px inset;
-    margin-bottom: 20px;
-    min-height: 20px;
-    padding: 19px;
+  min-height:                                           20px;
+  padding:                                               0px;
+  margin-bottom:                                        20px;
+  background-color:                       #ffffff !important;
+  border:                                  1px solid #e4e4e4;
+  border:                   1px solid rgba(228, 228, 228, 1);
+  -webkit-border-radius:                                 4px;
+  -moz-border-radius:                                    4px;
+  border-radius:                                         4px;
+  -webkit-box-shadow:    inset 0 0px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow:       inset 0 0px 0px rgba(0, 0, 0, 0.05);
+  box-shadow:            inset 0 0px 0px rgba(0, 0, 0, 0.05);
 }
 
-h3 {
-    font-family: Georgia,"Times New Roman",Times,serif !important;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 27px;
+.well .activity span {
+  margin-left: 5px;
+}
+
+.well p > a {
+  display:              block;
+  font-size:             18pt;
+  margin:                16px;
+  font-weight:         normal;
+  color:              #777777;
+  line-height:           20pt;
+  text-align:            left;
+  margin-bottom:         60pt;
+}
+
+.well p > a:hover {
+  text-decoration: none;
+}
+
+.well .activity {
+  font-size:     10pt;
+  font-weight:   bold;
+  color:      #4f4f4f;
+  margin: 15px;
+}
+
+.people {
+  padding-left: 10px;
+}
+.aging {
+  padding-left: 20px;
+  text-align: right;
+}
+
+[data-icon]::before {
+font-family:              'Entypo';
+color:                     #e4e4e4;
+font-weight:        400 !important;
+content:           attr(data-icon);
+text-transform:               none;
+margin-right:                  3px;
+position:                 relative;
+top:                           3px;
+font-size:                    30px;
+line-height:                     0;
+}
+
+.divider {
+  border-top: 3px solid;
+  margin-bottom: 8px;
+}
+
+.divider.brainstorming {
+  border-color: red;
+}
+
+.divider.prototyping {
+  border-color: green;
+}
+
+.info {
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+
+.status {
+  display: block;
+}
+
+.tags {
+  display: block;
+}
+
+.tag {
+  display: inline-block;
+
+}
+
+.actions {
+  margin-top:5px;
 }
 
 
-.form-search { border: none; box-shadow: none;}
+@media (max-width: 480px) {
 
-.btn-group { margin-top: 18px;  }
+}
+
+@media (max-width: 768px) {
+  header h1 small {
+    display: block;
+  }
+
+  header div.description {
+    padding-top: 9px;
+    padding-bottom: 4px;
+  }
+
+  .isotope .project {
+    position: static ! important;
+    -webkit-transform: translate(0px, 0px) ! important;
+       -moz-transform: translate(0px, 0px) ! important;
+            transform: translate(0px, 0px) ! important;
+  }
+}
+
+@media (max-width: 980px) {
+  header p.lead span {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+}
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .project.span4 {
+    width: 352px;
+  }
+}
+
+@media (min-width: 980px) {
+
+}
+
+@media (min-width: 1200px) {
+  .project.span4 {
+    width: 270px;
+  }
+}
+
+.signup-btn  {
+  display: block;
+    border: 1px solid #136ac1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 30px 12px 0;
+    border-radius: 3px;
+    margin: 10px 0 25px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+    text-shadow: 0 1px 0 #1a64bf;
+    cursor: pointer;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.signup-btn i {
+      height: 24px;
+      width: 20px;
+      background-size: 24px;
+      display: inline-block;
+      vertical-align: text-top;
+      margin-right: 15px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      padding-right: 30px;
+      box-shadow: 1px 0 0px rgba(255, 255, 255, 0.2); }
+
+.signup-btn:hover {
+  color: #ffffff;
+  box-shadow: 0 0 2px #CCC;
+  text-decoration: none;
+  background-position: 0 0 !important;
+}
+
+.signup-twitter {
+    background-color: #0ba8d6;
+    background-image: -moz-linear-gradient(#35bfe7, #0ba8d6);
+    background-image: -o-linear-gradient(#35bfe7, #0ba8d6);
+    background-image: -ms-linear-gradient(#35bfe7, #0ba8d6);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #35bfe7), color-stop(1, #0ba8d6));
+    background-image: -webkit-linear-gradient(#35bfe7, #0ba8d6); }
+
+.signup-twitter i {
+      background: url('../images/icon-twitter.svg') center center no-repeat;
+      background-size: 30px auto; }
+
+.signup-facebook {
+    background-color: #4264b3;
+    background-image: -moz-linear-gradient(#679ace, #4264b3);
+    background-image: -o-linear-gradient(#679ace, #4264b3);
+    background-image: -ms-linear-gradient(#679ace, #4264b3);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #679ace), color-stop(1, #4264b3));
+    background-image: -webkit-linear-gradient(#679ace, #4264b3);
+    border-color: #1b345a;
+    text-shadow: 0 1px 0 #2d449e; }
+
+.signup-facebook i {
+      background: url('../images/icon-facebook.svg') center center no-repeat;
+      background-size: 30px auto;
+}
+
+.signup-meetup {
+    background-color: #E11B36;
+    background-image: -moz-linear-gradient(#E11B36, #C61E2F);
+    background-image: -o-linear-gradient(#E11B36, #C61E2F);
+    background-image: -ms-linear-gradient(#E11B36, #C61E2F);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E11B36), color-stop(1, #C61E2F));
+    background-image: -webkit-linear-gradient(#E11B36, #C61E2F);
+    border-color: #C61E2F;
+    text-shadow: 0 1px 0 #D12038; }
+
+.signup-meetup i {
+      background: url('../images/icon-meetup.png') center center no-repeat;
+      background-size: 30px auto;
+}
+
+.signup-github {
+    color: #4C4C4C;
+    background-color: #EAEAEA;
+    background-image: -moz-linear-gradient(#FAFAFA, #EAEAEA);
+    background-image: -o-linear-gradient(#FAFAFA, #EAEAEA);
+    background-image: -ms-linear-gradient(#FAFAFA, #EAEAEA);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FAFAFA), color-stop(1, #EAEAEA));
+    background-image: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
+    border-color: #CACACA;
+    text-shadow: 0 1px 0 #CBCBCB; }
+
+.signup-github i {
+      background: url('../images/icon-github.svg') center center no-repeat;
+      background-size: 30px auto;
+}
+
+a.signup-github:hover {
+  color: #4C4C4C;
+}
+
+.btn-custom {
+  background-color: hsl(0, 0%, 76%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#E4E4E4", endColorstr="#E4E4E4");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#E4E4E4), to(#E4E4E4));
+  background-image: -moz-linear-gradient(top, #E4E4E4, #E4E4E4);
+  background-image: -ms-linear-gradient(top, #E4E4E4, #E4E4E4);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #E4E4E4), color-stop(100%, #E4E4E4));
+  background-image: -webkit-linear-gradient(top, #E4E4E4, #E4E4E4);
+  background-image: -o-linear-gradient(top, #E4E4E4, #E4E4E4);
+  background-image: linear-gradient(#E4E4E4, #E4E4E4);
+  border-color: #E4E4E4 #E4E4E4 hsl(0, 0%, 76%);
+  color: #000 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
+  font-weight: bolder;
+}
+
+
 
