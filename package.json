@@ -1,6 +1,6 @@
 {
-  "name": "hhba-hackdash",
-  "version": "0.0.1",
+  "name": "hackdash",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "node app"
@@ -10,8 +10,10 @@
     "jade": "*",
     "passport": "0.1.x",
     "passport-twitter": "0.1.x",
-    "redis": "0.7.x",
-    "connect-redis": "1.4.x",
-    "reds": "0.1.x"
+    "passport-meetup": "0.1.x",
+    "passport-facebook": "0.1.x",
+    "passport-github": "0.1.x",
+    "mongoose": "2.x.x",
+    "connect-mongo": "0.1.x"
   }
 }

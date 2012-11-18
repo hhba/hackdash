@@ -1,21 +1,26 @@
-hackdash
+HackDash
 ========
 
-Dashboard para organizar las ideas en un hackatón
+Organize hackaton ideas into a dashboard
 
 Instalación
 ===========
 
-* Instalar [Node.js](http://nodejs.org)
+* Install [Node.js](http://nodejs.org)
 
-* Instalar [Redis](http://redis.io)
+* Install [MongoDB](http://mongodb.org)
 
-* Crear una [aplicación en twitter](https://dev.twitter.com/)
+* Create a [Twitter app](https://dev.twitter.com/)
 
-* Correr redis: $ redis-server
+* Run MongoDB: $ mongod
 
-* Instalar dependencias: $ npm install
+* Install dependencies: $ npm install
 
-* Agregar las credenciales de twitter en keys.json
+* Fill config.json with your configuration
 
-* Correr la aplicación: $ node app.js
+* Run the application: $ node server.js
+
+
+Changelog
+===========
+
